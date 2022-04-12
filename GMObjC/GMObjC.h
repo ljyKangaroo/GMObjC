@@ -6,6 +6,7 @@
  * GMSm3Utils SM3 摘要提取，HMAC 计算
  * GMSm4Utils SM4 对称加解密，含ECB和CBC模式
  * GMUtils  工具类，16进制编码解码等
+ * SLEncrypt  DES对称加密、RSA非对称加密等
  */
 
 #import <Foundation/Foundation.h>
@@ -19,3 +20,4 @@
 #import "GMSm2Utils.h"
 #import "GMSm3Utils.h"
 #import "GMSm4Utils.h"
+#import "SLEncrypt.h"

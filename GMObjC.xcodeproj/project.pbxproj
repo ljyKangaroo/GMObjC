@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84665899280516AE009C78AB /* SLEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 84665890280516AE009C78AB /* SLEncrypt.m */; };
+		8466589A280516AE009C78AB /* encry_rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665891280516AE009C78AB /* encry_rsa.h */; };
+		8466589B280516AE009C78AB /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84665892280516AE009C78AB /* GTMBase64.m */; };
+		8466589C280516AE009C78AB /* SLEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665893280516AE009C78AB /* SLEncrypt.h */; };
+		8466589D280516AE009C78AB /* encry.c in Sources */ = {isa = PBXBuildFile; fileRef = 84665894280516AE009C78AB /* encry.c */; };
+		8466589E280516AE009C78AB /* encry.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665895280516AE009C78AB /* encry.h */; };
+		8466589F280516AE009C78AB /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665896280516AE009C78AB /* GTMBase64.h */; };
+		846658A0280516AE009C78AB /* encry_rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 84665897280516AE009C78AB /* encry_rsa.c */; };
+		846658A1280516AE009C78AB /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665898280516AE009C78AB /* GTMDefines.h */; };
 		9CEA768F271017B700DA6FA1 /* GMObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEA768E271017B700DA6FA1 /* GMObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CEA76A02710180E00DA6FA1 /* GMSm4Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEA76952710180E00DA6FA1 /* GMSm4Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CEA76A12710180E00DA6FA1 /* GMSm3Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEA76962710180E00DA6FA1 /* GMSm3Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +32,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84665890280516AE009C78AB /* SLEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEncrypt.m; sourceTree = "<group>"; };
+		84665891280516AE009C78AB /* encry_rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encry_rsa.h; sourceTree = "<group>"; };
+		84665892280516AE009C78AB /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		84665893280516AE009C78AB /* SLEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEncrypt.h; sourceTree = "<group>"; };
+		84665894280516AE009C78AB /* encry.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = encry.c; sourceTree = "<group>"; };
+		84665895280516AE009C78AB /* encry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encry.h; sourceTree = "<group>"; };
+		84665896280516AE009C78AB /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		84665897280516AE009C78AB /* encry_rsa.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = encry_rsa.c; sourceTree = "<group>"; };
+		84665898280516AE009C78AB /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		9CEA768B271017B700DA6FA1 /* GMObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GMObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEA768E271017B700DA6FA1 /* GMObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMObjC.h; sourceTree = "<group>"; };
 		9CEA76952710180E00DA6FA1 /* GMSm4Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSm4Utils.h; sourceTree = "<group>"; };
@@ -71,8 +89,17 @@
 		9CEA768D271017B700DA6FA1 /* GMObjC */ = {
 			isa = PBXGroup;
 			children = (
+				84665893280516AE009C78AB /* SLEncrypt.h */,
+				84665890280516AE009C78AB /* SLEncrypt.m */,
 				9CEA768E271017B700DA6FA1 /* GMObjC.h */,
 				9CEA769F2710180E00DA6FA1 /* GMObjCDef.h */,
+				84665891280516AE009C78AB /* encry_rsa.h */,
+				84665897280516AE009C78AB /* encry_rsa.c */,
+				84665895280516AE009C78AB /* encry.h */,
+				84665894280516AE009C78AB /* encry.c */,
+				84665896280516AE009C78AB /* GTMBase64.h */,
+				84665892280516AE009C78AB /* GTMBase64.m */,
+				84665898280516AE009C78AB /* GTMDefines.h */,
 				9CEA769C2710180E00DA6FA1 /* GMSm2Bio.h */,
 				9CEA769E2710180E00DA6FA1 /* GMSm2Bio.m */,
 				9CEA76972710180E00DA6FA1 /* GMSm2Utils.h */,
@@ -102,13 +129,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8466589E280516AE009C78AB /* encry.h in Headers */,
 				9CEA768F271017B700DA6FA1 /* GMObjC.h in Headers */,
 				9CEA76A22710180E00DA6FA1 /* GMSm2Utils.h in Headers */,
 				9CEA76A12710180E00DA6FA1 /* GMSm3Utils.h in Headers */,
+				846658A1280516AE009C78AB /* GTMDefines.h in Headers */,
 				9CEA76A32710180E00DA6FA1 /* GMUtils.h in Headers */,
 				9CEA76A72710180E00DA6FA1 /* GMSm2Bio.h in Headers */,
 				9CEA76A02710180E00DA6FA1 /* GMSm4Utils.h in Headers */,
 				9CEA76AA2710180E00DA6FA1 /* GMObjCDef.h in Headers */,
+				8466589A280516AE009C78AB /* encry_rsa.h in Headers */,
+				8466589F280516AE009C78AB /* GTMBase64.h in Headers */,
+				8466589C280516AE009C78AB /* SLEncrypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,10 +213,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CEA76A92710180E00DA6FA1 /* GMSm2Bio.m in Sources */,
+				846658A0280516AE009C78AB /* encry_rsa.c in Sources */,
+				8466589D280516AE009C78AB /* encry.c in Sources */,
 				9CEA76A52710180E00DA6FA1 /* GMSm4Utils.m in Sources */,
+				84665899280516AE009C78AB /* SLEncrypt.m in Sources */,
 				9CEA76A42710180E00DA6FA1 /* GMSm3Utils.m in Sources */,
 				9CEA76A82710180E00DA6FA1 /* GMSm2Utils.m in Sources */,
 				9CEA76A62710180E00DA6FA1 /* GMUtils.m in Sources */,
+				8466589B280516AE009C78AB /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
