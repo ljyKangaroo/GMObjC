@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		84665899280516AE009C78AB /* SLEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 84665890280516AE009C78AB /* SLEncrypt.m */; };
-		8466589A280516AE009C78AB /* encry_rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665891280516AE009C78AB /* encry_rsa.h */; };
+		8466589A280516AE009C78AB /* encry_rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665891280516AE009C78AB /* encry_rsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8466589B280516AE009C78AB /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84665892280516AE009C78AB /* GTMBase64.m */; };
-		8466589C280516AE009C78AB /* SLEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665893280516AE009C78AB /* SLEncrypt.h */; };
+		8466589C280516AE009C78AB /* SLEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665893280516AE009C78AB /* SLEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8466589D280516AE009C78AB /* encry.c in Sources */ = {isa = PBXBuildFile; fileRef = 84665894280516AE009C78AB /* encry.c */; };
-		8466589E280516AE009C78AB /* encry.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665895280516AE009C78AB /* encry.h */; };
-		8466589F280516AE009C78AB /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665896280516AE009C78AB /* GTMBase64.h */; };
+		8466589E280516AE009C78AB /* encry.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665895280516AE009C78AB /* encry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8466589F280516AE009C78AB /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665896280516AE009C78AB /* GTMBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		846658A0280516AE009C78AB /* encry_rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 84665897280516AE009C78AB /* encry_rsa.c */; };
-		846658A1280516AE009C78AB /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665898280516AE009C78AB /* GTMDefines.h */; };
+		846658A1280516AE009C78AB /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 84665898280516AE009C78AB /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CEA768F271017B700DA6FA1 /* GMObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEA768E271017B700DA6FA1 /* GMObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CEA76A02710180E00DA6FA1 /* GMSm4Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEA76952710180E00DA6FA1 /* GMSm4Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CEA76A12710180E00DA6FA1 /* GMSm3Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEA76962710180E00DA6FA1 /* GMSm3Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,17 +130,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8466589E280516AE009C78AB /* encry.h in Headers */,
+				846658A1280516AE009C78AB /* GTMDefines.h in Headers */,
+				8466589A280516AE009C78AB /* encry_rsa.h in Headers */,
+				8466589F280516AE009C78AB /* GTMBase64.h in Headers */,
+				8466589C280516AE009C78AB /* SLEncrypt.h in Headers */,
 				9CEA768F271017B700DA6FA1 /* GMObjC.h in Headers */,
 				9CEA76A22710180E00DA6FA1 /* GMSm2Utils.h in Headers */,
 				9CEA76A12710180E00DA6FA1 /* GMSm3Utils.h in Headers */,
-				846658A1280516AE009C78AB /* GTMDefines.h in Headers */,
 				9CEA76A32710180E00DA6FA1 /* GMUtils.h in Headers */,
 				9CEA76A72710180E00DA6FA1 /* GMSm2Bio.h in Headers */,
 				9CEA76A02710180E00DA6FA1 /* GMSm4Utils.h in Headers */,
 				9CEA76AA2710180E00DA6FA1 /* GMObjCDef.h in Headers */,
-				8466589A280516AE009C78AB /* encry_rsa.h in Headers */,
-				8466589F280516AE009C78AB /* GTMBase64.h in Headers */,
-				8466589C280516AE009C78AB /* SLEncrypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
