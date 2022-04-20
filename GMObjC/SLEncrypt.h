@@ -75,4 +75,32 @@
 
 #endif
 
+// MARK: - AESCipher 加密
+
+/// AEC 加密字符串
+/// @param content 加密内容
+/// @param key 密钥
+NSString * aesEncryptString(NSString *content, NSString *key);
+/// AEC 加密字符串 16进制表现形式
+/// @param content 加密内容
+/// @param key 密钥
+NSString * aesEncryptHexStr(NSString *content, NSString *key);
+/// AEC 解密字符串
+/// @param content 加密内容
+/// @param key 密钥
+NSString * aesDecryptString(NSString *content, NSString *key);
+
+/// 普通字符串转换为十六进制的
+/// @param string 转化内容
+NSString * hexStringFromString(NSString *string);
+
+/// AEC 加密
+/// @param data 加密内容
+/// @param key 密钥
+NSData * aesEncryptData(NSData *data, NSData *key);
+/// AEC 解密
+/// @param data 加密内容
+/// @param key 密钥
+NSData * aesDecryptData(NSData *data, NSData *key);
+
 @end
