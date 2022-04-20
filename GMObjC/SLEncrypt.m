@@ -86,6 +86,49 @@
     return resultStr;
 }
 
+
++ (NSString *)decrypt128WithStr:(NSString *)ciphertext ivKey:(NSString *)ivKey
+{
+    if(ciphertext.length == 0 || ivKey.length == 0) {
+        return nil;
+    }
+    NSData *data = [GTMBase64 decodeString:ciphertext];
+    int ciphertext_len = (int)data.length;
+    const char *ivkey_ = (const char *)[ivKey UTF8String];
+    unsigned char *plaintext =(unsigned char *)malloc(sizeof(unsigned char) * ciphertext.length * 8);
+    if (plaintext == NULL) {
+        return nil;
+    }
+    int result = decrypt_AES_128_ECB((unsigned char *)data.bytes, ciphertext_len, ivkey_, plaintext);
+    NSString *resultStr = nil;
+    if(result > 0) {
+       resultStr = [[NSString alloc] initWithBytes:plaintext length:result encoding:NSUTF8StringEncoding];
+    }
+    free(plaintext);
+    return resultStr;
+}
+
++ (NSString *)encrypt128WithStr:(NSString *)plaintext ivKey:(NSString *)ivKey
+{
+    if(plaintext.length == 0 || ivKey.length == 0) {
+        return nil;
+    }
+    NSData *data = [plaintext dataUsingEncoding:NSUTF8StringEncoding];
+    int in_plain_len = (int)data.length;
+    const char *ivkey_ = (const char *)[ivKey UTF8String];
+    unsigned char *cipherText =(unsigned char *)malloc(sizeof(unsigned char) * plaintext.length * 8);
+    if (cipherText == NULL) {
+        return nil;
+    }
+    int result = encrypt_AES_128_ECB((unsigned char *)data.bytes, in_plain_len, ivkey_, cipherText);
+    NSString *resultStr = nil;
+    if(result > 0) {
+        resultStr= [[NSString alloc] initWithData:[GTMBase64 encodeBytes:cipherText length:result] encoding:NSUTF8StringEncoding];;
+    }
+    free(cipherText);
+    return resultStr;
+}
+
 + (NSString *)encryptWithStr:(NSString *)plaintext publicKey:(NSString *)publicKey
 {
     if(plaintext.length == 0 || publicKey.length == 0) {

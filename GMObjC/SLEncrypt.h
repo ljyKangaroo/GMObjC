@@ -37,6 +37,24 @@
 + (NSString *)decryptWithStr:(NSString *)ciphertext ivKey:(NSString *)ivKey;
 
 /**
+ 对称加密数据
+ 
+ @param plaintext 明文
+ @param ivKey 对称加密密钥
+ @return 返回对称加密数据
+ */
++ (NSString *)encrypt128WithStr:(NSString *)plaintext ivKey:(NSString *)ivKey;
+
+/**
+ 对称数据解密
+
+ @param ciphertext 密文
+ @param ivKey 对称加密密钥
+ @return 返回明文数据
+ */
++ (NSString *)decrypt128WithStr:(NSString *)ciphertext ivKey:(NSString *)ivKey;
+
+/**
  RSA公钥加密
 
  @param plaintext 明文
@@ -75,6 +93,7 @@
 
 #endif
 
+// MARK: - AES CBC pkcs5padding 128 加密
 // MARK: - AESCipher 加密
 
 /// AEC 加密字符串
@@ -102,5 +121,6 @@ NSData * aesEncryptData(NSData *data, NSData *key);
 /// @param data 加密内容
 /// @param key 密钥
 NSData * aesDecryptData(NSData *data, NSData *key);
+
 
 @end

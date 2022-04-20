@@ -17,13 +17,22 @@ int get_md5(char *input, char *output);
 
 
 /**
- * AES解密ECB模式
+ * AES解密ECB模式 256
  */
 UCSENCRY_EXTERN int decrypt_AES_ECB(unsigned char *ciphertext, int ciphertext_len, const char *key, unsigned char *plaintext);
 
 /**
- * AES加密ECB模式
+ * AES加密ECB模式 256
  */
 UCSENCRY_EXTERN int encrypt_AES_ECB(unsigned char *plaintext, int plaintext_len, const char *key, unsigned char *ciphertext);
+/**
+ * AES解密ECB模式 128
+ */
+UCSENCRY_EXTERN int decrypt_AES_128_ECB(unsigned char *ciphertext, int ciphertext_len, const char *key, unsigned char *plaintext);
+
+/**
+ * AES加密ECB模式 128
+ */
+UCSENCRY_EXTERN int encrypt_AES_128_ECB(unsigned char *plaintext, int plaintext_len, const char *key, unsigned char *ciphertext);
 
 #endif
